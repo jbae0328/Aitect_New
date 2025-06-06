@@ -2062,9 +2062,6 @@ C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\y5cegpam35-tptq2av103.gz
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\3nrvu9ht6v-lfu7j35m59.gz
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\l7cl4rdb7j-oyz0vx2fzb.gz
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\xx3soh3dd2-jhw7mcypey.gz
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\ch8foa1pxf-cfiwpjcpdu.gz
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\2ugx3k21me-xams9uqc2z.gz
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\staticwebassets.development.json
@@ -2075,3 +2072,6 @@ C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\Aitect_pilo
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\refint\Aitect_pilot.dll
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\Aitect_pilot.pdb
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\ref\Aitect_pilot.dll
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\xx3soh3dd2-2yjhizdxkv.gz
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\ch8foa1pxf-klsyccz3ok.gz
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\2ugx3k21me-de315r533z.gz

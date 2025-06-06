@@ -1,0 +1,7 @@
+.vs/
+*.vsidx
+*.suo
+*.user
+**/FileContentIndex/
+obj/
+bin/

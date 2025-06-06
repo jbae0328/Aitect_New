@@ -1,16 +1,16 @@
 self.assetsManifest = {
-  "version": "ZsjNNeBt",
+  "version": "Priyep14",
   "assets": [
     {
       "hash": "sha256-bZqI+ScU3/4ZUKH+04/r0rb0BxYhQWoP5pmLixhCCvo=",
       "url": "Aitect_pilot.styles.css"
     },
     {
-      "hash": "sha256-SApQe6QhAPkT+ndAQAQhiitB2ml0LpYrqU17Pc64mec=",
+      "hash": "sha256-uA6SMVKexJ2uD+Xfaxyuzhq1PxQkymb5CHlMaFiX3pQ=",
       "url": "_framework/Aitect_pilot.pdb"
     },
     {
-      "hash": "sha256-yXkceSZD/VPMRXE2yXYknlfERVHZVWEGYRwEMeiIZNE=",
+      "hash": "sha256-xrJ303kO31Pfj6ZBwvfaqiQF/etoc4kb4N+pAqpQxjg=",
       "url": "_framework/Aitect_pilot.wasm"
     },
     {
@@ -770,7 +770,7 @@ self.assetsManifest = {
       "url": "_framework/WindowsBase.wasm"
     },
     {
-      "hash": "sha256-6eAaaTGoPKkE2ltMjyriKC1Nw6ovR2mON4c8CmMb3Kk=",
+      "hash": "sha256-i7faQ81IHdbf92zpOBAiQFJqKVpj1SNua1Uqbda8vjs=",
       "url": "_framework/blazor.boot.json"
     },
     {
