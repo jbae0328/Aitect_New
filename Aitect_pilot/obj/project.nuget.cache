@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pP/DxkCiByA=",
+  "dgSpecHash": "TJs1805aNeE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\archi\\source\\repos\\Aitect_pilot\\Aitect_pilot\\Aitect_pilot.csproj",
+  "projectFilePath": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Aitect_pilot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\archi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.16\\microsoft.aspnetcore.authorization.8.0.16.nupkg.sha512",
     "C:\\Users\\archi\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.16\\microsoft.aspnetcore.components.8.0.16.nupkg.sha512",

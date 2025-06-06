@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\archi\\source\\repos\\Aitect_New\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Home.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Home.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T12:22:41.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\index.html",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-06T12:22:33.228Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

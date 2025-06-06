@@ -1851,11 +1851,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\archi\\source\\repos\\Aitect_pilot\\Aitect_pilot\\Aitect_pilot.csproj",
+      "projectUniqueName": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Aitect_pilot.csproj",
       "projectName": "Aitect_pilot",
-      "projectPath": "C:\\Users\\archi\\source\\repos\\Aitect_pilot\\Aitect_pilot\\Aitect_pilot.csproj",
+      "projectPath": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Aitect_pilot.csproj",
       "packagesPath": "C:\\Users\\archi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\archi\\source\\repos\\Aitect_pilot\\Aitect_pilot\\obj\\",
+      "outputPath": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
