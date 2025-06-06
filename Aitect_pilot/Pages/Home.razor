@@ -1,0 +1,136 @@
+﻿@page "/"
+@inject NavigationManager Navigation
+
+<PageTitle>Aitect - CAD Software</PageTitle>
+
+<!-- 헤더 -->
+<div class="header">
+    <div class="logo">Aitect</div>
+</div>
+
+<!-- 메인 콘텐츠 -->
+<div class="main-content">
+    <h1 class="hero-title">Professional CAD Design<br>Made Simple</h1>
+    <p class="hero-subtitle">
+        Create precise 3D models and technical drawings with our intuitive CAD software.
+        Perfect for architects, engineers, and designers who demand both power and simplicity.
+        Start your design journey today.
+    </p>
+    <button class="cta-button" @onclick="StartDrawing">Start Drawing</button>
+</div>
+
+@code {
+    private void StartDrawing()
+    {
+        // 3D 모델링 페이지로 이동
+        Navigation.NavigateTo("/3d");
+    }
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    /* 헤더 */
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 50px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: -1px;
+    }
+
+    /* 메인 콘텐츠 */
+    .main-content {
+        text-align: center;
+        padding: 40px 40px 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 25px;
+        line-height: 1.2;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.85);
+        max-width: 650px;
+        margin: 0 auto 50px;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+
+    .cta-button {
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        letter-spacing: 0.5px;
+    }
+
+        .cta-button:hover {
+            background: rgba(0, 0, 0, 0.85);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+          
+    /* 반응형 */
+    @@media (max-width: 768px) {
+        .header {
+            padding: 20px 30px;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            padding: 0 20px;
+        }
+    }
+
+    /* 애니메이션 */
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
