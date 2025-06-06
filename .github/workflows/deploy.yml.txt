@@ -17,7 +17,7 @@ jobs:
         dotnet-version: '6.0.x'
 
     - name: Publish .NET Core Project
-      run: dotnet publish -c Release -o release --nologo
+      run: dotnet publish Aitect_pilot/Aitect_pilot.csproj -c Release -o release --nologo
 
     - name: Change base-tag in index.html from / to Aitect_New
       run: sed -i 's/<base href="\/" \/>/<base href="\/Aitect_New\/" \/>/g' release/wwwroot/index.html
