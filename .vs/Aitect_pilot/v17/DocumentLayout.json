@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\archi\\source\\repos\\Aitect_New\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\workspace.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\workspace.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -123,10 +127,6 @@
       "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\controls\\keyboard-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\ui\\status-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\ui\\status-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -150,11 +150,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WorkSpace.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\WorkSpace.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\WorkSpace.razor",
@@ -167,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Properties.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Properties.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Properties.razor",
@@ -181,18 +181,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\_Imports.razor",
-              "RelativeDocumentMoniker": "Aitect_pilot\\_Imports.razor",
-              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\_Imports.razor",
-              "RelativeToolTip": "Aitect_pilot\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-07T10:08:12.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "VariantBar.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\VariantBar.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\VariantBar.razor",
@@ -205,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Shared\\NavMenu.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Shared\\NavMenu.razor",
@@ -217,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Aitect Styles.css",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\css\\Aitect Styles.css",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\css\\Aitect Styles.css",
@@ -229,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "WorkspaceModels.cs",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Models\\WorkspaceModels.cs",
               "RelativeDocumentMoniker": "Aitect_pilot\\Models\\WorkspaceModels.cs",
@@ -242,7 +230,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Shared\\MainLayout.razor*",
+              "RelativeToolTip": "Aitect_pilot\\Shared\\MainLayout.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T03:49:33.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\_Imports.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\_Imports.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\_Imports.razor",
+              "RelativeToolTip": "Aitect_pilot\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T10:08:12.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\index.html",
@@ -254,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SketchPanel.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\SketchPanel.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\SketchPanel.razor",
@@ -266,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "select-tool.js",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\select-tool.js",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\Tools\\select-tool.js",
@@ -278,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "tool-manager.js",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\tool-manager.js",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\Tools\\tool-manager.js",
@@ -290,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "line-tool.js",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\line-tool.js",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\Tools\\line-tool.js",
@@ -302,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "grid-manager.js",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\scene\\grid-manager.js",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\scene\\grid-manager.js",
@@ -314,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\css\\app.css",
@@ -326,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "mouse-handler.js",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\controls\\mouse-handler.js",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\controls\\mouse-handler.js",
@@ -338,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "camera-controller.js",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\controls\\camera-controller.js",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\controls\\camera-controller.js",
@@ -350,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "drag-manager.js",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\drag-manager.js",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\Tools\\drag-manager.js",
@@ -362,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Directormode.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Workspace\\Directormode.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Workspace\\Directormode.razor",
@@ -374,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Sketchmode.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Workspace\\Sketchmode.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Workspace\\Sketchmode.razor",
@@ -386,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Home.razor",
@@ -398,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\App.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\App.razor",
@@ -410,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Program.cs",
               "RelativeDocumentMoniker": "Aitect_pilot\\Program.cs",
@@ -422,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "three-renderer.js",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\core\\three-renderer.js",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\core\\three-renderer.js",
@@ -434,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Header.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Header.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Header.razor",
@@ -446,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Modebar.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Modebar.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Modebar.razor",
@@ -458,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Toolbar.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Toolbar.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Toolbar.razor",
@@ -470,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Subtoolbar.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Subtoolbar.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Subtoolbar.razor",
@@ -482,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "WorkspaceService.cs",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Services\\WorkspaceService.cs",
               "RelativeDocumentMoniker": "Aitect_pilot\\Services\\WorkspaceService.cs",
@@ -494,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Counter.razor",
@@ -506,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "keyboard-manager.js",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\controls\\keyboard-manager.js",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\controls\\keyboard-manager.js",
@@ -515,18 +528,6 @@
               "ViewState": "AgIAAIcAAAAAAAAAAAAkwLsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-06-07T12:08:04.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Shared\\MainLayout.razor",
-              "RelativeDocumentMoniker": "Aitect_pilot\\Shared\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Shared\\MainLayout.razor",
-              "RelativeToolTip": "Aitect_pilot\\Shared\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-07T03:49:33.433Z"
             },
             {
               "$type": "Document",

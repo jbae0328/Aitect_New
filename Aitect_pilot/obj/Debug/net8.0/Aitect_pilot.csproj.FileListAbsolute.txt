@@ -2072,6 +2072,6 @@ C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\Aitect_pilo
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\ref\Aitect_pilot.dll
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\xx3soh3dd2-dex976k31b.gz
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\ch8foa1pxf-53gkxgz0ed.gz
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\2ugx3k21me-02jvjqlr44.gz
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\xx3soh3dd2-eu6laye2tk.gz
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\ch8foa1pxf-7xwv5vobvp.gz
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\2ugx3k21me-445ypdhhx0.gz
