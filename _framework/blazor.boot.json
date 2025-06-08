@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Aitect_pilot",
   "resources": {
-    "hash": "sha256-cJUSd7+T0Ahz2hNr15Tdz8zJHEGr98ry3nWfmxUiR0I=",
+    "hash": "sha256-y5VCgeuvzeZAGj5tDJlw0P9B33MNGtBc7DbStc6dKU4=",
     "jsModuleNative": {
       "dotnet.native.8.0.16.khcj4p6y0x.js": "sha256-RiGT44TFZmHOY+Oqvb8o8r+BJVWex6+dPxFxrOiWvFY="
     },
@@ -17,7 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "Aitect_pilot.wasm": "sha256-qGIZB8A+k3TnDuhIMLn7VEYgYyajIc6QcuebBhJqkVg=",
+      "Aitect_pilot.wasm": "sha256-L/4u9S952LFOtKvqgh3r0OBqsJUFZHmutpTCqBpCsGg=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-Oy5Rxb7OgGV+daGnCjlXk4mbT15A9Z8AK5x2wvY4Cwc=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-SH8ORTW8HDiCmaz2ewXpIg95jRDcpqyuIZvmXxzzMug=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-FkD80HgagXKsQ+0yInJ2522BYaR2CdASW6dUwSFyB64=",
