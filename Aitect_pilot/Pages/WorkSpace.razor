@@ -1,0 +1,770 @@
+﻿@page "/workspace"
+@inject IJSRuntime JSRuntime
+@inject IWorkspaceService WorkspaceService
+@using Aitect_pilot.Models
+@using Aitect_pilot.Services
+
+<!-- 최상단 앱 바 -->
+<div class="app-header">
+    <div class="app-logo">Aitect</div>
+</div>
+
+<!-- 모드 선택 바 -->
+<div class="mode-bar">
+    <button class="mode-btn @(sketchType == "2d" ? "active" : "")"
+            @onclick="@(async () => await SetSketchType("2d"))">
+        2D Sketch
+    </button>
+    <button class="mode-btn @(sketchType == "3d" ? "active" : "")"
+            @onclick="@(async () => await SetSketchType("3d"))">
+        3D Sketch
+    </button>
+    <div class="mode-separator"></div>
+    <button class="director-btn @(showDirectorPanel ? "active" : "")"
+            @onclick="ToggleDirectorPanel">
+        @if (showDirectorPanel)
+        {
+            <span>✖️ Close Director</span>
+        }
+        else
+        {
+            <span>🎬 Director Mode</span>
+        }
+    </button>
+</div>
+
+<!-- 툴바 -->
+<div class="sub-toolbar">
+    <div class="tool-group">
+        @foreach (var tool in currentTools)
+        {
+            <button class="tool-btn @(tool.IsActive ? "active" : "")"
+                    @onclick="@(() => SelectTool(tool.Id))">
+                <span class="tool-label">@tool.Name</span>
+            </button>
+        }
+    </div>
+</div>
+
+<!-- VariantBar -->
+@if (showVariantBar)
+{
+    <VariantBar ShowVariantBar="true"
+                Variants="@currentVariants"
+                GroupLabel="@currentGroupLabel"
+                QuickSettings="@currentQuickSettings"
+                ShowQuickSettings="true"
+                OnVariantSelected="@OnVariantSelected"
+                OnSettingChanged="@OnSettingChanged" />
+}
+
+<!-- 메인 작업 영역 -->
+<div class="workspace-content" style="margin-top: @(showVariantBar ? "180px" : "135px");">
+    <div class="main-workspace">
+
+        <!-- 왼쪽: Properties 컴포넌트 -->
+        <Properties CurrentTool="@currentTool"
+                    SelectedObject="@selectedObject"
+                    ToolProperties="@currentToolProperties"
+                    Layers="@layerList"
+                    OnPropertyChanged="@OnPropertyChanged"
+                    OnToolPropertyChanged="@OnToolPropertyChanged"
+                    OnLayerSelected="@OnLayerSelected"
+                    OnLayerToggled="@OnLayerToggled"
+                    OnAddLayer="@OnAddLayer" />
+
+        <!-- 중앙: 3D 뷰어 -->
+        <div class="center-viewer">
+            <div id="sketch-viewer" class="viewer-container">
+                <!-- 3D 뷰어가 여기에 로드됩니다 -->
+            </div>
+        </div>
+
+        <!-- 오른쪽: Director 패널 (선택적) -->
+        @if (showDirectorPanel)
+        {
+            <div class="right-director-panel">
+                <div class="director-content">
+                    <div class="options-section">
+                        <h3>매스 스터디 옵션</h3>
+                        <div class="option-list">
+                            @foreach (var option in massOptions)
+                            {
+                                <div class="option-item @(option.IsSelected ? "selected" : "")"
+                                     @onclick="@(() => SelectOption(option.Id))">
+                                    <div class="option-icon">@option.Icon</div>
+                                    <div class="option-details">
+                                        <div class="option-name">@option.Name</div>
+                                        <div class="option-efficiency">효율성: @option.Efficiency%</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="analysis-section">
+                        <h3>분석 결과</h3>
+                        <div class="metrics-compact">
+                            <div class="metric-item">
+                                <span class="metric-label">용적률</span>
+                                <span class="metric-value">@analysisResult.VolumeRatio%</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">효율성</span>
+                                <span class="metric-value">@analysisResult.Efficiency%</span>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons-compact">
+                            <button class="action-btn approve" @onclick="ApproveOption">✅ 진행</button>
+                            <button class="action-btn request" @onclick="RequestAlternatives">🔄 다른 옵션</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- 상태바 -->
+<div class="status-bar">
+    <span>Mode: @(sketchType.ToUpper())</span>
+    <span>Tool: @currentTool</span>
+    @if (showDirectorPanel)
+    {
+        <span>Director: Active</span>
+    }
+    <span>Ready</span>
+</div>
+
+<style>
+    /* 기본 헤더/툴바 스타일 */
+    .app-header {
+        height: 40px;
+        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .app-logo {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: -0.5px;
+    }
+
+    .mode-bar {
+        height: 45px;
+        background: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+        top: 40px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        gap: 10px;
+    }
+
+    .mode-btn {
+        padding: 8px 20px;
+        background: transparent;
+        border: 1px solid #d0d7de;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.2s ease;
+    }
+
+        .mode-btn:hover {
+            background: #f3f4f6;
+            border-color: #0078d4;
+        }
+
+        .mode-btn.active {
+            background: #0078d4;
+            color: white;
+            border-color: #0078d4;
+        }
+
+    .mode-separator {
+        width: 1px;
+        height: 30px;
+        background: #d0d7de;
+        margin: 0 10px;
+    }
+
+    .director-btn {
+        padding: 8px 20px;
+        background: transparent;
+        border: 1px solid #ffc107;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        color: #856404;
+    }
+
+        .director-btn:hover {
+            background: #fff3cd;
+            border-color: #ffc107;
+        }
+
+        .director-btn.active {
+            background: #ffc107;
+            color: #856404;
+            border-color: #ffc107;
+        }
+
+    .sub-toolbar {
+        height: 50px;
+        background: #ffffff;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+        top: 85px;
+        left: 0;
+        right: 0;
+        z-index: 997;
+    }
+
+    .tool-group {
+        display: flex;
+        gap: 8px;
+    }
+
+    .tool-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 16px;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        min-width: 70px;
+        height: 35px;
+    }
+
+        .tool-btn:hover {
+            background: #f3f4f6;
+            border-color: #d0d7de;
+        }
+
+        .tool-btn.active {
+            background: #e3f2fd;
+            border-color: #2196f3;
+            color: #1976d2;
+            font-weight: 600;
+        }
+
+    .tool-label {
+        font-size: 12px;
+        color: #374151;
+        font-weight: 500;
+    }
+
+    .tool-btn.active .tool-label {
+        color: #1976d2;
+        font-weight: 600;
+    }
+
+    /* 워크스페이스 레이아웃 */
+    .workspace-content {
+        height: calc(100vh - 160px);
+        overflow: hidden;
+    }
+
+    .main-workspace {
+        display: flex;
+        height: 100%;
+    }
+
+    .center-viewer {
+        flex: 1;
+        background: #ffffff;
+    }
+
+    .viewer-container {
+        width: 100%;
+        height: 100%;
+        background: #f5f5f5;
+        position: relative;
+    }
+
+    /* Director 패널 */
+    .right-director-panel {
+        width: 300px;
+        background: #f8f9fa;
+        border-left: 1px solid #e0e0e0;
+        padding: 15px;
+        overflow-y: auto;
+        flex-shrink: 0;
+    }
+
+    .director-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .options-section, .analysis-section {
+        background: white;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+        .options-section h3, .analysis-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 16px;
+            color: #374151;
+        }
+
+    .option-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .option-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+        .option-item:hover {
+            border-color: #3b82f6;
+            background: #f8fafc;
+        }
+
+        .option-item.selected {
+            border-color: #10b981;
+            background: #ecfdf5;
+        }
+
+    .option-icon {
+        font-size: 20px;
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
+
+    .option-details {
+        flex: 1;
+    }
+
+    .option-name {
+        font-weight: 600;
+        font-size: 13px;
+        color: #374151;
+        margin-bottom: 2px;
+    }
+
+    .option-efficiency {
+        font-size: 11px;
+        color: #6b7280;
+    }
+
+    .metrics-compact {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+
+    .metric-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 10px;
+        background: #f9fafb;
+        border-radius: 4px;
+    }
+
+    .metric-label {
+        font-size: 12px;
+        color: #6b7280;
+    }
+
+    .metric-value {
+        font-size: 14px;
+        font-weight: bold;
+        color: #059669;
+    }
+
+    .action-buttons-compact {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .action-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 11px;
+        transition: all 0.2s ease;
+    }
+
+        .action-btn.approve {
+            background: #10b981;
+            color: white;
+        }
+
+            .action-btn.approve:hover {
+                background: #059669;
+            }
+
+        .action-btn.request {
+            background: #f3f4f6;
+            color: #374151;
+            border: 1px solid #d1d5db;
+        }
+
+            .action-btn.request:hover {
+                background: #e5e7eb;
+            }
+
+    /* 상태바 */
+    .status-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 25px;
+        background: #f0f0f0;
+        border-top: 1px solid #d1d5db;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 11px;
+        color: #6b7280;
+        z-index: 1000;
+    }
+
+        .status-bar span {
+            margin-right: 20px;
+        }
+</style>
+
+@code {
+    // 상태 변수들
+    private string sketchType = "3d";
+    private string currentTool = "Select";
+    private bool showDirectorPanel = false;
+    private bool showVariantBar = false;
+
+    // 데이터
+    private List<Tool> currentTools = new();
+    private List<MassOption> massOptions = new();
+    private AnalysisData analysisResult = new();
+    private ObjectProperties? selectedObject = null;
+
+    // VariantBar 관련
+    private List<ToolVariant> currentVariants = new();
+    private List<QuickSetting> currentQuickSettings = new();
+    private string currentGroupLabel = "Type";
+
+    // Properties 전용 데이터
+    private List<QuickSetting> currentToolProperties = new();
+    private List<Properties.LayerInfo> layerList = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        currentTools = WorkspaceService.Get3DTools();
+        massOptions = WorkspaceService.GetMassOptions();
+        analysisResult = WorkspaceService.GetAnalysisData();
+
+        // 레이어 초기화
+        InitializeLayers();
+
+        // 도구 속성 초기화
+        UpdateToolProperties();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await Task.Delay(100);
+            await JSRuntime.InvokeVoidAsync("init3DViewer");
+        }
+    }
+
+    private void InitializeLayers()
+    {
+        layerList = new List<Properties.LayerInfo>
+        {
+            new() { Id = "layer1", Name = "Layer 1", IsActive = true, IsVisible = true },
+            new() { Id = "layer2", Name = "Layer 2", IsActive = false, IsVisible = true },
+            new() { Id = "layer3", Name = "Layer 3", IsActive = false, IsVisible = false }
+        };
+    }
+
+    private void UpdateToolProperties()
+    {
+        currentToolProperties = currentTool switch
+        {
+            "Line" => new List<QuickSetting>
+            {
+                new() { Key = "thickness", Label = "두께", Value = "2", InputType = "number" },
+                new() { Key = "color", Label = "색상", Value = "#000000", InputType = "color" },
+                new() { Key = "opacity", Label = "투명도", Value = "100", InputType = "number" }
+            },
+            "Box" => new List<QuickSetting>
+            {
+                new() { Key = "width", Label = "폭", Value = "10", InputType = "number" },
+                new() { Key = "height", Label = "높이", Value = "5", InputType = "number" },
+                new() { Key = "depth", Label = "깊이", Value = "8", InputType = "number" },
+                new() { Key = "material", Label = "재질", Value = "콘크리트", InputType = "text" }
+            },
+            "Select" => new List<QuickSetting>
+            {
+                new() { Key = "snap", Label = "스냅", Value = "true", InputType = "checkbox" },
+                new() { Key = "grid", Label = "격자", Value = "true", InputType = "checkbox" }
+            },
+            _ => new List<QuickSetting>()
+        };
+    }
+
+    // 이벤트 핸들러들
+    private async Task SetSketchType(string type)
+    {
+        sketchType = type;
+        currentTools = type == "2d" ? WorkspaceService.Get2DTools() : WorkspaceService.Get3DTools();
+
+        if (currentTools.Any())
+        {
+            foreach (var tool in currentTools)
+                tool.IsActive = false;
+            currentTools.First().IsActive = true;
+            currentTool = currentTools.First().Name;
+        }
+
+        UpdateToolProperties();
+        StateHasChanged();
+
+        if (type == "3d")
+        {
+            await Task.Delay(100);
+            await JSRuntime.InvokeVoidAsync("init3DViewer");
+        }
+    }
+
+    private void ToggleDirectorPanel()
+    {
+        showDirectorPanel = !showDirectorPanel;
+        StateHasChanged();
+    }
+
+    private void SelectTool(string toolId)
+    {
+        foreach (var tool in currentTools)
+        {
+            tool.IsActive = tool.Id == toolId;
+            if (tool.IsActive)
+                currentTool = tool.Name;
+        }
+
+        // 도구 선택시 객체 선택 해제
+        selectedObject = null;
+
+        // 도구 속성 업데이트
+        UpdateToolProperties();
+
+        // VariantBar 설정
+        SetupVariantBar(toolId);
+
+        // JavaScript 알림
+        JSRuntime.InvokeVoidAsync("setTool", toolId);
+
+        StateHasChanged();
+    }
+
+    private void SetupVariantBar(string toolId)
+    {
+        switch (toolId)
+        {
+            case "line":
+                showVariantBar = true;
+                currentGroupLabel = "라인 타입";
+                currentVariants = GetLineVariants();
+                currentQuickSettings = GetLineQuickSettings();
+                break;
+            case "box":
+                showVariantBar = true;
+                currentGroupLabel = "박스 타입";
+                currentVariants = GetBoxVariants();
+                currentQuickSettings = GetBoxQuickSettings();
+                break;
+            default:
+                showVariantBar = false;
+                currentVariants.Clear();
+                currentQuickSettings.Clear();
+                break;
+        }
+    }
+
+    // Properties 이벤트 핸들러들
+    private void OnPropertyChanged(Properties.PropertyChangedArgs args)
+    {
+        if (selectedObject != null)
+        {
+            var property = selectedObject.BasicProperties.FirstOrDefault(p => p.Key == args.Key) ??
+                          selectedObject.GeometryProperties.FirstOrDefault(p => p.Key == args.Key) ??
+                          selectedObject.MaterialProperties.FirstOrDefault(p => p.Key == args.Key);
+
+            if (property != null)
+            {
+                property.Value = args.Value;
+            }
+        }
+        StateHasChanged();
+    }
+
+    private void OnToolPropertyChanged(Properties.ToolPropertyChangedArgs args)
+    {
+        var property = currentToolProperties.FirstOrDefault(p => p.Key == args.Key);
+        if (property != null)
+        {
+            property.Value = args.Value;
+        }
+        StateHasChanged();
+    }
+
+    private void OnLayerSelected(string layerId)
+    {
+        foreach (var layer in layerList)
+        {
+            layer.IsActive = layer.Id == layerId;
+        }
+        StateHasChanged();
+    }
+
+    private void OnLayerToggled(string layerId)
+    {
+        var layer = layerList.FirstOrDefault(l => l.Id == layerId);
+        if (layer != null)
+        {
+            layer.IsVisible = !layer.IsVisible;
+        }
+        StateHasChanged();
+    }
+
+    private void OnAddLayer()
+    {
+        var newLayer = new Properties.LayerInfo
+        {
+            Id = $"layer{layerList.Count + 1}",
+            Name = $"Layer {layerList.Count + 1}",
+            IsActive = false,
+            IsVisible = true
+        };
+        layerList.Add(newLayer);
+        StateHasChanged();
+    }
+
+    // VariantBar 이벤트들
+    private void OnVariantSelected(string variantId)
+    {
+        foreach (var variant in currentVariants)
+        {
+            variant.IsActive = variant.Id == variantId;
+        }
+        StateHasChanged();
+    }
+
+    private void OnSettingChanged(VariantBar.SettingChangedArgs args)
+    {
+        var setting = currentQuickSettings.FirstOrDefault(s => s.Key == args.Key);
+        if (setting != null)
+        {
+            setting.Value = args.Value;
+        }
+        StateHasChanged();
+    }
+
+    // Director 패널 이벤트들
+    private void SelectOption(string optionId)
+    {
+        foreach (var option in massOptions)
+        {
+            option.IsSelected = option.Id == optionId;
+            if (option.IsSelected)
+                analysisResult.Efficiency = option.Efficiency;
+        }
+        StateHasChanged();
+    }
+
+    private void ApproveOption()
+    {
+        JSRuntime.InvokeVoidAsync("alert", "선택한 옵션으로 진행합니다!");
+    }
+
+    private void RequestAlternatives()
+    {
+        JSRuntime.InvokeVoidAsync("alert", "새로운 옵션을 생성 중입니다...");
+    }
+
+    // 헬퍼 메서드들
+    private List<ToolVariant> GetLineVariants()
+    {
+        return new List<ToolVariant>
+        {
+            new() { Id = "straight", Name = "직선", Icon = "📏", IsActive = true },
+            new() { Id = "polyline", Name = "폴리라인", Icon = "📐", IsActive = false }
+        };
+    }
+
+    private List<ToolVariant> GetBoxVariants()
+    {
+        return new List<ToolVariant>
+        {
+            new() { Id = "cube", Name = "정육면체", Icon = "⬜", IsActive = true },
+            new() { Id = "rectangle", Name = "직육면체", Icon = "▭", IsActive = false }
+        };
+    }
+
+    private List<QuickSetting> GetLineQuickSettings()
+    {
+        return new List<QuickSetting>
+        {
+            new() { Key = "thickness", Label = "두께", Value = "2", InputType = "number" }
+        };
+    }
+
+    private List<QuickSetting> GetBoxQuickSettings()
+    {
+        return new List<QuickSetting>
+        {
+            new() { Key = "width", Label = "폭", Value = "10", InputType = "number" }
+        };
+    }
+
+    // VariantBar용 클래스 제거 (VariantBar.razor의 것을 사용)
+}

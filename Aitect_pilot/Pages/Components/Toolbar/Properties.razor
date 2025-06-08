@@ -1,0 +1,565 @@
+﻿@using Aitect_pilot.Models
+
+<div class="properties-panel">
+    <!-- 도구/객체 선택에 따른 동적 내용 -->
+    @if (SelectedObject != null)
+    {
+        <!-- 객체가 선택된 경우 -->
+        <div class="properties-header">
+            <div class="object-preview">
+                <div class="preview-icon">@SelectedObject.Icon</div>
+                <div class="object-info">
+                    <h3>@SelectedObject.Name</h3>
+                    <span class="object-type">@SelectedObject.Type</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 기본 속성 -->
+        <div class="property-section">
+            <h4 class="section-title">🔧 속성</h4>
+            <div class="property-grid">
+                @foreach (var prop in SelectedObject.BasicProperties)
+                {
+                    <div class="property-row">
+                        <label class="property-label">@prop.Label</label>
+                        <div class="property-input">
+                            @switch (prop.Type)
+                            {
+                                case "text":
+                                    <input type="text" value="@prop.Value" @onchange="@((e) => HandlePropertyChange(prop.Key, e.Value?.ToString()))" />
+                                    break;
+                                case "number":
+                                    <input type="number" value="@prop.Value" @onchange="@((e) => HandlePropertyChange(prop.Key, e.Value?.ToString()))" />
+                                    break;
+                                case "color":
+                                    <div class="color-input">
+                                        <div class="color-preview" style="background-color: @prop.Value;"></div>
+                                        <input type="color" value="@prop.Value" @onchange="@((e) => HandlePropertyChange(prop.Key, e.Value?.ToString()))" />
+                                    </div>
+                                    break;
+                                case "toggle":
+                                    <div class="toggle-input">
+                                        <input type="checkbox" checked="@(prop.Value == "true")" @onchange="@((e) => HandlePropertyChange(prop.Key, e.Value?.ToString()))" />
+                                    </div>
+                                    break;
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- 지오메트리 속성 -->
+        @if (SelectedObject.GeometryProperties.Any())
+        {
+            <div class="property-section">
+                <h4 class="section-title">📐 지오메트리</h4>
+                <div class="property-grid">
+                    @foreach (var prop in SelectedObject.GeometryProperties)
+                    {
+                        <div class="property-row readonly">
+                            <label class="property-label">@prop.Label</label>
+                            <span class="property-value">@prop.Value @prop.Unit</span>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    }
+    else if (!string.IsNullOrEmpty(CurrentTool) && CurrentTool != "Select")
+    {
+        <!-- 도구가 선택된 경우 (Select 제외) -->
+        <div class="tool-properties">
+            <div class="properties-header">
+                <div class="tool-preview">
+                    <div class="tool-icon">@GetToolIcon(CurrentTool)</div>
+                    <div class="tool-info">
+                        <h3>@CurrentTool 도구</h3>
+                        <span class="tool-description">@GetToolDescription(CurrentTool)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="property-section">
+                <h4 class="section-title">⚙️ 도구 설정</h4>
+                <div class="property-grid">
+                    @foreach (var setting in ToolProperties)
+                    {
+                        <div class="property-row">
+                            <label class="property-label">@setting.Label</label>
+                            <div class="property-input">
+                                @if (setting.InputType == "checkbox")
+                                {
+                                    <div class="toggle-input">
+                                        <input type="checkbox" checked="@(setting.Value == "true")" @onchange="@((e) => HandleToolPropertyChange(setting.Key, e.Value?.ToString()))" />
+                                    </div>
+                                }
+                                else if (setting.InputType == "color")
+                                {
+                                    <div class="color-input">
+                                        <div class="color-preview" style="background-color: @setting.Value;"></div>
+                                        <input type="color" value="@setting.Value" @onchange="@((e) => HandleToolPropertyChange(setting.Key, e.Value?.ToString()))" />
+                                    </div>
+                                }
+                                else
+                                {
+                                    <input type="@setting.InputType" value="@setting.Value" @onchange="@((e) => HandleToolPropertyChange(setting.Key, e.Value?.ToString()))" />
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- 기본 상태 - 뷰어 정보 표시 -->
+        <div class="default-state">
+            <div class="properties-header">
+                <div class="view-info">
+                    <div class="view-icon">📐</div>
+                    <div class="view-details">
+                        <h3>3D 뷰어</h3>
+                        <span class="view-description">현재 뷰어 상태</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 뷰어 정보 섹션 -->
+            <div class="property-section">
+                <h4 class="section-title">📊 뷰어 정보</h4>
+                <div class="property-grid">
+                    <div class="property-row readonly">
+                        <label class="property-label">모드</label>
+                        <span class="property-value">3D Sketch</span>
+                    </div>
+                    <div class="property-row readonly">
+                        <label class="property-label">객체 수</label>
+                        <span class="property-value">0개</span>
+                    </div>
+                    <div class="property-row readonly">
+                        <label class="property-label">격자</label>
+                        <span class="property-value">표시됨</span>
+                    </div>
+                    <div class="property-row readonly">
+                        <label class="property-label">좌표계</label>
+                        <span class="property-value">월드</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 카메라 정보 섹션 -->
+            <div class="property-section">
+                <h4 class="section-title">📷 카메라</h4>
+                <div class="property-grid">
+                    <div class="property-row readonly">
+                        <label class="property-label">투영</label>
+                        <span class="property-value">원근법</span>
+                    </div>
+                    <div class="property-row readonly">
+                        <label class="property-label">시야각</label>
+                        <span class="property-value">75°</span>
+                    </div>
+                    <div class="property-row readonly">
+                        <label class="property-label">거리</label>
+                        <span class="property-value">25.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 빠른 시작 가이드 -->
+            <div class="property-section">
+                <h4 class="section-title">🚀 빠른 시작</h4>
+                <div class="quick-guide">
+                    <div class="guide-item">
+                        <span class="guide-icon">🔧</span>
+                        <span class="guide-text">도구를 선택해서 그리기 시작</span>
+                    </div>
+                    <div class="guide-item">
+                        <span class="guide-icon">🖱️</span>
+                        <span class="guide-text">마우스 휠로 확대/축소</span>
+                    </div>
+                    <div class="guide-item">
+                        <span class="guide-icon">🎯</span>
+                        <span class="guide-text">객체 클릭으로 속성 편집</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- 레이어 섹션 (항상 표시) -->
+    <div class="property-section layers-section">
+        <h4 class="section-title">📋 레이어</h4>
+        <div class="layer-list">
+            @foreach (var layer in Layers)
+            {
+                <div class="layer-item @(layer.IsActive ? "active" : "")" @onclick="@(() => HandleLayerSelect(layer.Id))">
+                    <span class="layer-name">@layer.Name</span>
+                    <span class="layer-visibility @(layer.IsVisible ? "" : "hidden")" @onclick:stopPropagation="true" @onclick="@(() => HandleLayerToggle(layer.Id))">
+                        @(layer.IsVisible ? "👁️" : "🚫")
+                    </span>
+                </div>
+            }
+        </div>
+        <button class="add-layer-btn" @onclick="HandleAddLayer">+ 새 레이어</button>
+    </div>
+</div>
+
+<style>
+    .properties-panel {
+        width: 320px;
+        background: #ffffff;
+        border-right: 1px solid #e0e0e0;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        flex-shrink: 0;
+    }
+
+    .properties-header {
+        padding: 16px;
+        border-bottom: 1px solid #e0e0e0;
+        background: #f8f9fa;
+    }
+
+    .object-preview, .tool-preview, .view-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .preview-icon, .tool-icon, .view-icon {
+        width: 48px;
+        height: 48px;
+        background: #e3f2fd;
+        border: 2px solid #2196f3;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    .object-info h3, .tool-info h3, .view-details h3 {
+        margin: 0 0 4px 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+    }
+
+    .object-type, .tool-description, .view-description {
+        font-size: 12px;
+        color: #666;
+        background: #f0f0f0;
+        padding: 2px 8px;
+        border-radius: 4px;
+    }
+
+    .property-section {
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .section-title {
+        margin: 0;
+        padding: 12px 16px;
+        background: #f8f9fa;
+        font-size: 13px;
+        font-weight: 600;
+        color: #333;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .property-grid {
+        padding: 8px 16px 16px;
+    }
+
+    .property-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        align-items: center;
+        padding: 6px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+        .property-row:last-child {
+            border-bottom: none;
+        }
+
+        .property-row.readonly {
+            opacity: 0.7;
+        }
+
+    .property-label {
+        font-size: 11px;
+        color: #555;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .property-input {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .property-input input {
+            width: 100%;
+            max-width: 120px;
+            height: 26px;
+            padding: 4px 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 11px;
+            text-align: right;
+        }
+
+            .property-input input:focus {
+                outline: none;
+                border-color: #2196f3;
+                box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+            }
+
+    .property-value {
+        font-size: 11px;
+        color: #666;
+        font-family: 'Consolas', monospace;
+        text-align: right;
+    }
+
+    .color-input {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        justify-content: flex-end;
+    }
+
+    .color-preview {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .color-input input[type="color"] {
+        width: 30px;
+        height: 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .toggle-input {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+        .toggle-input input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+    /* 빠른 가이드 스타일 */
+    .quick-guide {
+        padding: 8px 16px 16px;
+    }
+
+    .guide-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+        .guide-item:last-child {
+            border-bottom: none;
+        }
+
+    .guide-icon {
+        font-size: 14px;
+        width: 20px;
+        text-align: center;
+    }
+
+    .guide-text {
+        font-size: 11px;
+        color: #555;
+        line-height: 1.4;
+    }
+
+    /* 레이어 섹션 */
+    .layers-section {
+        margin-top: auto;
+    }
+
+    .layer-list {
+        padding: 8px 16px;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+    .layer-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 10px;
+        margin: 2px 0;
+        background: #f8f9fa;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 12px;
+    }
+
+        .layer-item:hover {
+            background: #e3f2fd;
+            border-color: #2196f3;
+        }
+
+        .layer-item.active {
+            background: #2196f3;
+            color: white;
+            font-weight: 600;
+        }
+
+    .layer-name {
+        flex: 1;
+    }
+
+    .layer-visibility {
+        font-size: 10px;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+    }
+
+        .layer-visibility:hover {
+            opacity: 0.7;
+        }
+
+        .layer-visibility.hidden {
+            opacity: 0.5;
+        }
+
+    .add-layer-btn {
+        margin: 8px 16px 16px;
+        padding: 8px;
+        background: #f0f0f0;
+        border: 1px dashed #ccc;
+        border-radius: 4px;
+        font-size: 11px;
+        color: #666;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+        .add-layer-btn:hover {
+            background: #e0e0e0;
+            border-color: #999;
+            color: #333;
+        }
+</style>
+
+@code {
+    [Parameter] public string CurrentTool { get; set; } = "";
+    [Parameter] public ObjectProperties? SelectedObject { get; set; }
+    [Parameter] public List<QuickSetting> ToolProperties { get; set; } = new();
+    [Parameter] public List<LayerInfo> Layers { get; set; } = new();
+
+    [Parameter] public EventCallback<PropertyChangedArgs> OnPropertyChanged { get; set; }
+    [Parameter] public EventCallback<ToolPropertyChangedArgs> OnToolPropertyChanged { get; set; }
+    [Parameter] public EventCallback<string> OnLayerSelected { get; set; }
+    [Parameter] public EventCallback<string> OnLayerToggled { get; set; }
+    [Parameter] public EventCallback OnAddLayer { get; set; }
+
+    private string GetToolIcon(string tool)
+    {
+        return tool switch
+        {
+            "Select" => "📍",
+            "Line" => "📏",
+            "Box" => "📦",
+            "Cylinder" => "🥫",
+            "Sphere" => "⚽",
+            _ => "🔧"
+        };
+    }
+
+    private string GetToolDescription(string tool)
+    {
+        return tool switch
+        {
+            "Select" => "객체 선택 및 편집",
+            "Line" => "직선 그리기",
+            "Box" => "박스 생성",
+            "Cylinder" => "원통 생성",
+            "Sphere" => "구 생성",
+            _ => "도구 설명"
+        };
+    }
+
+    private async Task HandlePropertyChange(string key, string? value)
+    {
+        if (OnPropertyChanged.HasDelegate)
+        {
+            await OnPropertyChanged.InvokeAsync(new PropertyChangedArgs { Key = key, Value = value ?? "" });
+        }
+    }
+
+    private async Task HandleToolPropertyChange(string key, string? value)
+    {
+        if (OnToolPropertyChanged.HasDelegate)
+        {
+            await OnToolPropertyChanged.InvokeAsync(new ToolPropertyChangedArgs { Key = key, Value = value ?? "" });
+        }
+    }
+
+    private async Task HandleLayerSelect(string layerId)
+    {
+        if (OnLayerSelected.HasDelegate)
+        {
+            await OnLayerSelected.InvokeAsync(layerId);
+        }
+    }
+
+    private async Task HandleLayerToggle(string layerId)
+    {
+        if (OnLayerToggled.HasDelegate)
+        {
+            await OnLayerToggled.InvokeAsync(layerId);
+        }
+    }
+
+    private async Task HandleAddLayer()
+    {
+        if (OnAddLayer.HasDelegate)
+        {
+            await OnAddLayer.InvokeAsync();
+        }
+    }
+
+    // 이벤트 클래스들
+    public class PropertyChangedArgs
+    {
+        public string Key { get; set; } = "";
+        public string Value { get; set; } = "";
+    }
+
+    public class ToolPropertyChangedArgs
+    {
+        public string Key { get; set; } = "";
+        public string Value { get; set; } = "";
+    }
+
+    public class LayerInfo
+    {
+        public string Id { get; set; } = "";
+        public string Name { get; set; } = "";
+        public bool IsActive { get; set; } = false;
+        public bool IsVisible { get; set; } = true;
+    }
+}

@@ -28,8 +28,40 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/3DView.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcM0RWaWV3LnJhem9y
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Components/Toolbar/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xUb29sYmFyXEhlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Components/Toolbar/Modebar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xUb29sYmFyXE1vZGViYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Components/Toolbar/Properties.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xUb29sYmFyXFByb3BlcnRpZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Components/Toolbar/SketchPanel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xUb29sYmFyXFNrZXRjaFBhbmVsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Components/Toolbar/Subtoolbar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xUb29sYmFyXFN1YnRvb2xiYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Components/Toolbar/Toolbar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xUb29sYmFyXFRvb2xiYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Components/Toolbar/VariantBar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xUb29sYmFyXFZhcmlhbnRCYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Components/Workspace/Directormode.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xXb3Jrc3BhY2VcRGlyZWN0b3Jtb2RlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Components/Workspace/Sketchmode.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xXb3Jrc3BhY2VcU2tldGNobW9kZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/Counter.razor]
@@ -40,14 +72,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Pages/WorkSpace.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya1NwYWNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-rrvrpb5sb2
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-opupu6us00
 
-[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-s9bnnhb838
+[C:/Users/archi/source/repos/Aitect_New/Aitect_pilot/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-sm2kuycx4n

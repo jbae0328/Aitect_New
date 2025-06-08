@@ -1852,8 +1852,6 @@ C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\webcil\msco
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\webcil\netstandard.wasm
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\webcil\System.Private.CoreLib.wasm
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\webcil\Aitect_pilot.wasm
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\scopedcss\bundle\Aitect_pilot.styles.css
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\scopedcss\projectbundle\Aitect_pilot.bundle.scp.css
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\blazor.build.boot-extension.json
@@ -2072,6 +2070,8 @@ C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\Aitect_pilo
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\refint\Aitect_pilot.dll
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\Aitect_pilot.pdb
 C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\ref\Aitect_pilot.dll
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\xx3soh3dd2-2yjhizdxkv.gz
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\ch8foa1pxf-klsyccz3ok.gz
-C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\2ugx3k21me-de315r533z.gz
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\xx3soh3dd2-dex976k31b.gz
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\ch8foa1pxf-53gkxgz0ed.gz
+C:\Users\archi\source\repos\Aitect_New\Aitect_pilot\obj\Debug\net8.0\compressed\2ugx3k21me-02jvjqlr44.gz

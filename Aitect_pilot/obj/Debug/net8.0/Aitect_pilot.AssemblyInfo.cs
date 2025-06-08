@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aitect_pilot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3aec38b1a042607ae3d5d2a9c9a389313b76bdfd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc54be4d48b96c3b20b3a3a1550795bd52d2a927")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aitect_pilot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aitect_pilot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,186 @@
+﻿@using Aitect_pilot.Models
+
+<div class="director-workspace">
+    <div class="director-content">
+        <!-- 옵션 패널 -->
+        <div class="options-panel">
+            <h3>매스 스터디 옵션</h3>
+            <div class="option-grid">
+                @foreach (var option in MassOptions)
+                {
+                    <div class="option-card @(option.IsSelected ? "selected" : "")"
+                         @onclick="() => OnOptionSelected.InvokeAsync(option.Id)">
+                        <div class="option-icon">@option.Icon</div>
+                        <div class="option-name">@option.Name</div>
+                        <div class="option-efficiency">효율성: @option.Efficiency%</div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- 분석 패널 -->
+        <div class="analysis-panel">
+            <h3>분석 결과</h3>
+            <div class="metrics">
+                <div class="metric">
+                    <span class="metric-label">용적률</span>
+                    <span class="metric-value">@AnalysisResult.VolumeRatio%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">효율성</span>
+                    <span class="metric-value">@AnalysisResult.Efficiency%</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="action-btn approve" @onclick="() => OnApproveOption.InvokeAsync()">
+                    ✅ 이 옵션으로 진행
+                </button>
+                <button class="action-btn request" @onclick="() => OnRequestAlternatives.InvokeAsync()">
+                    🔄 다른 옵션 요청
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .director-workspace {
+        height: 100%;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .director-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .options-panel, .analysis-panel {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+        .options-panel h3, .analysis-panel h3 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            color: #374151;
+        }
+
+    .option-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .option-card {
+        padding: 15px;
+        border: 2px solid #e5e7eb;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+
+        .option-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .option-card.selected {
+            border-color: #10b981;
+            background: #ecfdf5;
+        }
+
+    .option-icon {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .option-name {
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: #374151;
+    }
+
+    .option-efficiency {
+        font-size: 12px;
+        color: #6b7280;
+    }
+
+    .metrics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 15px 0 20px 0;
+    }
+
+    .metric {
+        background: #f9fafb;
+        padding: 15px;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    .metric-label {
+        display: block;
+        font-size: 12px;
+        color: #6b7280;
+        margin-bottom: 5px;
+    }
+
+    .metric-value {
+        font-size: 18px;
+        font-weight: bold;
+        color: #059669;
+    }
+
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .action-btn {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.2s ease;
+    }
+
+        .action-btn.approve {
+            background: #10b981;
+            color: white;
+        }
+
+            .action-btn.approve:hover {
+                background: #059669;
+            }
+
+        .action-btn.request {
+            background: #f3f4f6;
+            color: #374151;
+            border: 1px solid #d1d5db;
+        }
+
+            .action-btn.request:hover {
+                background: #e5e7eb;
+            }
+</style>
+
+@code {
+    [Parameter] public List<MassOption> MassOptions { get; set; } = new();
+    [Parameter] public AnalysisData AnalysisResult { get; set; } = new();
+    [Parameter] public EventCallback<string> OnOptionSelected { get; set; }
+    [Parameter] public EventCallback OnApproveOption { get; set; }
+    [Parameter] public EventCallback OnRequestAlternatives { get; set; }
+}

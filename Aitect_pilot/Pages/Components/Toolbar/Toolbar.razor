@@ -1,0 +1,85 @@
+﻿@if (ShowSketchTypeBar)
+{
+    <div class="sketch-type-bar">
+        <button class="sketch-type-btn @(SketchType == "2d" ? "active" : "")"
+                @onclick="@(() => OnSketchTypeChanged.InvokeAsync("2d"))">
+            2D Sketch
+        </button>
+        <button class="sketch-type-btn @(SketchType == "3d" ? "active" : "")"
+                @onclick="@(() => OnSketchTypeChanged.InvokeAsync("3d"))">
+            3D Sketch
+        </button>
+    </div>
+}
+else if (ShowDirectorInfo)
+{
+    <div class="director-toolbar">
+        <div class="director-info">
+            <span>옵션 검토 및 의사결정 모드</span>
+        </div>
+    </div>
+}
+
+<style>
+    .sketch-type-bar {
+        height: 40px;
+        background: #ffffff;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+        top: 85px;
+        left: 0;
+        right: 0;
+        z-index: 998;
+        gap: 8px;
+    }
+
+    .sketch-type-btn {
+        padding: 6px 16px;
+        background: #f8f9fa;
+        border: 1px solid #d0d7de;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 13px;
+        transition: all 0.2s ease;
+    }
+
+        .sketch-type-btn:hover {
+            background: #e9ecef;
+        }
+
+        .sketch-type-btn.active {
+            background: #e3f2fd;
+            border-color: #2196f3;
+            color: #1976d2;
+        }
+
+    .director-toolbar {
+        height: 40px;
+        background: #fff3cd;
+        border-bottom: 1px solid #ffeaa7;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+        top: 85px;
+        left: 0;
+        right: 0;
+        z-index: 998;
+    }
+
+    .director-info {
+        font-size: 13px;
+        color: #856404;
+        font-weight: 500;
+    }
+</style>
+
+@code {
+    [Parameter] public bool ShowSketchTypeBar { get; set; } = false;
+    [Parameter] public bool ShowDirectorInfo { get; set; } = false;
+    [Parameter] public string SketchType { get; set; } = "3d";
+    [Parameter] public EventCallback<string> OnSketchTypeChanged { get; set; }
+}

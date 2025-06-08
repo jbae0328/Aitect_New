@@ -1,0 +1,166 @@
+﻿@using Aitect_pilot.Models
+
+@if (ShowVariantBar)
+{
+    <div class="variant-bar">
+        <div class="variant-group">
+            <span class="variant-label">@GroupLabel:</span>
+            @foreach (var variant in Variants)
+            {
+                <button class="variant-btn @(variant.IsActive ? "active" : "")"
+                        @onclick="@(() => HandleVariantClick(variant.Id))"
+                        title="@variant.Description">
+                    <span class="variant-icon">@variant.Icon</span>
+                    <span class="variant-name">@variant.Name</span>
+                </button>
+            }
+        </div>
+
+        @if (ShowQuickSettings)
+        {
+            <div class="quick-settings">
+                @foreach (var setting in QuickSettings)
+                {
+                    <div class="setting-item">
+                        <label>@setting.Label</label>
+                        <input type="@setting.InputType"
+                               value="@setting.Value"
+                               @onchange="@((e) => HandleSettingChange(setting.Key, e.Value?.ToString() ?? ""))" />
+                    </div>
+                }
+            </div>
+        }
+    </div>
+}
+
+<style>
+    .variant-bar {
+        height: 45px;
+        background: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        position: fixed;
+        top: 135px;
+        left: 0;
+        right: 0;
+        z-index: 996;
+    }
+
+    .variant-group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .variant-label {
+        font-size: 12px;
+        color: #6b7280;
+        font-weight: 500;
+        margin-right: 8px;
+    }
+
+    .variant-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4px 8px;
+        background: #ffffff;
+        border: 1px solid #d0d7de;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        min-width: 60px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+
+        .variant-btn:hover {
+            background: #f3f4f6;
+            border-color: #9ca3af;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .variant-btn.active {
+            background: #dbeafe;
+            border-color: #3b82f6;
+            color: #1d4ed8;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+        }
+
+    .variant-icon {
+        font-size: 14px;
+        margin-bottom: 1px;
+    }
+
+    .variant-name {
+        font-size: 9px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+    .quick-settings {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .setting-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+        .setting-item label {
+            font-size: 10px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .setting-item input {
+            width: 50px;
+            height: 24px;
+            padding: 2px 6px;
+            border: 1px solid #d0d7de;
+            border-radius: 3px;
+            font-size: 11px;
+            text-align: center;
+        }
+
+            .setting-item input:focus {
+                outline: none;
+                border-color: #3b82f6;
+                box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.3);
+            }
+</style>
+
+@code {
+    [Parameter] public bool ShowVariantBar { get; set; } = false;
+    [Parameter] public string GroupLabel { get; set; } = "Type";
+    [Parameter] public List<ToolVariant> Variants { get; set; } = new();
+    [Parameter] public EventCallback<string> OnVariantSelected { get; set; }
+
+    [Parameter] public bool ShowQuickSettings { get; set; } = false;
+    [Parameter] public List<QuickSetting> QuickSettings { get; set; } = new();
+    [Parameter] public EventCallback<SettingChangedArgs> OnSettingChanged { get; set; }
+
+    private void HandleVariantClick(string variantId)
+    {
+        OnVariantSelected.InvokeAsync(variantId);
+    }
+
+    private void HandleSettingChange(string key, string value)
+    {
+        OnSettingChanged.InvokeAsync(new SettingChangedArgs { Key = key, Value = value });
+    }
+
+    // SettingChangedArgs 클래스 정의
+    public class SettingChangedArgs
+    {
+        public string Key { get; set; } = "";
+        public string Value { get; set; } = "";
+    }
+}

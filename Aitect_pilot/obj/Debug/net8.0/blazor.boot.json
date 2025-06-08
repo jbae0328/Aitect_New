@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Aitect_pilot",
   "resources": {
-    "hash": "sha256-mmmGwwk1CsRpT5fY47zQEVo5SbF82NSMCtI9gy7bLcY=",
+    "hash": "sha256-l9xaCubg9462JjDUnSF4qwoeLCeYbb47vSeWK0jb2KI=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-RiGT44TFZmHOY+Oqvb8o8r+BJVWex6+dPxFxrOiWvFY="
     },
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-Im6xq+lOse4P/VnAyrA3hwPstV67V5dB0EwQWcjipyE=",
       "netstandard.wasm": "sha256-PK0GLtj6kQVtZPzq0FZlnSdHh7geujg80LqKdJXA4pI=",
       "System.Private.CoreLib.wasm": "sha256-gEwccs7GbRSPGmeWBOKxNroYfyM+mZ7hqbP3ki1iwX0=",
-      "Aitect_pilot.wasm": "sha256-xrJ303kO31Pfj6ZBwvfaqiQF/etoc4kb4N+pAqpQxjg="
+      "Aitect_pilot.wasm": "sha256-VVBPz7EPtPkSO/MtyTtTGApPEWCYquuDROLo0eXCwmg="
     },
     "pdb": {
-      "Aitect_pilot.pdb": "sha256-uA6SMVKexJ2uD+Xfaxyuzhq1PxQkymb5CHlMaFiX3pQ="
+      "Aitect_pilot.pdb": "sha256-cb8X6u7gs3ofoRrFG83TXMf5PSuhISMu0yEmaMYqkD4="
     }
   },
   "cacheBootResources": true,

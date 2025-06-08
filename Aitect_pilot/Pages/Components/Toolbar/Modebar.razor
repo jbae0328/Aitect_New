@@ -1,0 +1,54 @@
+﻿<div class="mode-bar">
+    <button class="mode-btn @(CurrentMode == "sketch" ? "active" : "")"
+            @onclick="@(() => OnModeChanged.InvokeAsync("sketch"))">
+        Sketch Mode
+    </button>
+    <button class="mode-btn @(CurrentMode == "director" ? "active" : "")"
+            @onclick="@(() => OnModeChanged.InvokeAsync("director"))">
+        Director Mode
+    </button>
+</div>
+
+<style>
+    .mode-bar {
+        height: 45px;
+        background: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+        top: 40px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        gap: 10px;
+    }
+
+    .mode-btn {
+        padding: 8px 20px;
+        background: transparent;
+        border: 1px solid #d0d7de;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.2s ease;
+    }
+
+        .mode-btn:hover {
+            background: #f3f4f6;
+            border-color: #0078d4;
+        }
+
+        .mode-btn.active {
+            background: #0078d4;
+            color: white;
+            border-color: #0078d4;
+        }
+</style>
+
+@code {
+    [Parameter] public string CurrentMode { get; set; } = "sketch";
+    [Parameter] public EventCallback<string> OnModeChanged { get; set; }
+}

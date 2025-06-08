@@ -3,12 +3,144 @@
   "WorkspaceRootPath": "C:\\Users\\archi\\source\\repos\\Aitect_New\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\workspace.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\workspace.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\components\\toolbar\\properties.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\components\\toolbar\\properties.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\models\\workspacemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\models\\workspacemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\components\\toolbar\\variantbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\components\\toolbar\\variantbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\components\\toolbar\\sketchpanel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\components\\toolbar\\sketchpanel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\css\\aitect styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\css\\aitect styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\tools\\select-tool.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\tools\\select-tool.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\tools\\tool-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\tools\\tool-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\tools\\line-tool.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\tools\\line-tool.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\scene\\grid-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\scene\\grid-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\controls\\mouse-handler.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\controls\\mouse-handler.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\controls\\camera-controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\controls\\camera-controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\tools\\drag-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\tools\\drag-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\components\\workspace\\directormode.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\components\\workspace\\directormode.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\components\\workspace\\sketchmode.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\components\\workspace\\sketchmode.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\core\\three-renderer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\core\\three-renderer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\components\\toolbar\\header.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\components\\toolbar\\header.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\components\\toolbar\\modebar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\components\\toolbar\\modebar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\components\\toolbar\\toolbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\components\\toolbar\\toolbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\components\\toolbar\\subtoolbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\components\\toolbar\\subtoolbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\services\\workspaceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\services\\workspaceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\controls\\keyboard-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\controls\\keyboard-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\ui\\status-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\ui\\status-manager.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\tools\\basic-tools.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\tools\\basic-tools.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\js\\core\\viewer-initializer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\js\\core\\viewer-initializer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|c:\\users\\archi\\source\\repos\\aitect_new\\aitect_pilot\\wwwroot\\icon-512.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{E3433E93-65C8-45B8-9BB9-D546B0A3B7A5}|Aitect_pilot\\Aitect_pilot.csproj|solutionrelative:aitect_pilot\\wwwroot\\icon-512.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +155,440 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Home.razor*",
-              "RelativeToolTip": "Aitect_pilot\\Pages\\Home.razor*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Title": "WorkSpace.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\WorkSpace.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\WorkSpace.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\WorkSpace.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\WorkSpace.razor",
+              "ViewState": "AgIAAM0CAAAAAAAAAAAgwAEDAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-06T12:22:41.331Z",
+              "WhenOpened": "2025-06-07T06:04:40.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Properties.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Properties.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Properties.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Properties.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Components\\Toolbar\\Properties.razor",
+              "ViewState": "AgIAAAACAAAAAAAAAAAgwDQCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T03:01:21.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\_Imports.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\_Imports.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\_Imports.razor",
+              "RelativeToolTip": "Aitect_pilot\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T10:08:12.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VariantBar.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\VariantBar.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\VariantBar.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\VariantBar.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Components\\Toolbar\\VariantBar.razor",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAYwJ0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T02:57:17.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Aitect_pilot\\Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T03:49:37.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Aitect Styles.css",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\css\\Aitect Styles.css",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\css\\Aitect Styles.css",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\css\\Aitect Styles.css",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\css\\Aitect Styles.css",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-07T03:55:36.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkspaceModels.cs",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Models\\WorkspaceModels.cs",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Models\\WorkspaceModels.cs",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Models\\WorkspaceModels.cs",
+              "RelativeToolTip": "Aitect_pilot\\Models\\WorkspaceModels.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAArwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T10:17:11.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\index.html",
               "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\index.html",
               "RelativeToolTip": "Aitect_pilot\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAkwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-06-06T12:22:33.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SketchPanel.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\SketchPanel.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\SketchPanel.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\SketchPanel.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Components\\Toolbar\\SketchPanel.razor",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T10:12:37.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "select-tool.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\select-tool.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\Tools\\select-tool.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\select-tool.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\Tools\\select-tool.js",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAkwFMBAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T14:59:28.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "tool-manager.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\tool-manager.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\Tools\\tool-manager.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\tool-manager.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\Tools\\tool-manager.js",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwHMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T14:58:36.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "line-tool.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\line-tool.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\Tools\\line-tool.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\line-tool.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\Tools\\line-tool.js",
+              "ViewState": "AgIAANQAAAAAAAAAAAAkwAgBAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T14:59:34.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "grid-manager.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\scene\\grid-manager.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\scene\\grid-manager.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\scene\\grid-manager.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\scene\\grid-manager.js",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAkwJYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T12:09:47.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-07T18:23:18.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "mouse-handler.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\controls\\mouse-handler.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\controls\\mouse-handler.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\controls\\mouse-handler.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\controls\\mouse-handler.js",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAkwMwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T12:09:37.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "camera-controller.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\controls\\camera-controller.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\controls\\camera-controller.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\controls\\camera-controller.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\controls\\camera-controller.js",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwIwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T12:09:24.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "drag-manager.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\drag-manager.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\Tools\\drag-manager.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\drag-manager.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\Tools\\drag-manager.js",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAkwNcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-08T02:25:25.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Directormode.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Workspace\\Directormode.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Workspace\\Directormode.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Workspace\\Directormode.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Components\\Workspace\\Directormode.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T10:59:14.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Sketchmode.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Workspace\\Sketchmode.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Workspace\\Sketchmode.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Workspace\\Sketchmode.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Components\\Workspace\\Sketchmode.razor",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAgwM0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T10:58:34.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Home.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T12:22:41.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\App.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\App.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\App.razor",
+              "RelativeToolTip": "Aitect_pilot\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T03:49:31.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Program.cs",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Program.cs",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Program.cs",
+              "RelativeToolTip": "Aitect_pilot\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T06:20:41.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "three-renderer.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\core\\three-renderer.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\core\\three-renderer.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\core\\three-renderer.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\core\\three-renderer.js",
+              "ViewState": "AgIAALoAAAAAAAAAAAAkwO4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T12:09:58.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Header.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Header.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Header.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Header.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Components\\Toolbar\\Header.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T10:43:18.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Modebar.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Modebar.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Modebar.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Modebar.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Components\\Toolbar\\Modebar.razor",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T10:43:25.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Toolbar.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Toolbar.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Toolbar.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Toolbar.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Components\\Toolbar\\Toolbar.razor",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T10:43:28.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Subtoolbar.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Subtoolbar.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Components\\Toolbar\\Subtoolbar.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Components\\Toolbar\\Subtoolbar.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Components\\Toolbar\\Subtoolbar.razor",
+              "ViewState": "AgIAABgAAAAAAAAAAAAuwEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T10:12:08.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "WorkspaceService.cs",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Services\\WorkspaceService.cs",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Services\\WorkspaceService.cs",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Services\\WorkspaceService.cs",
+              "RelativeToolTip": "Aitect_pilot\\Services\\WorkspaceService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T11:31:23.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Pages\\Counter.razor",
+              "RelativeToolTip": "Aitect_pilot\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T11:14:38.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "keyboard-manager.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\controls\\keyboard-manager.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\controls\\keyboard-manager.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\controls\\keyboard-manager.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\controls\\keyboard-manager.js",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAkwLsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T12:08:04.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Aitect_pilot\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "Aitect_pilot\\Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T03:49:33.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "status-manager.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\ui\\status-manager.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\ui\\status-manager.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\ui\\status-manager.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\ui\\status-manager.js",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwD0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T12:08:30.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "basic-tools.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\basic-tools.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\Tools\\basic-tools.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\Tools\\basic-tools.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\Tools\\basic-tools.js",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwJgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T14:59:19.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "viewer-initializer.js",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\core\\viewer-initializer.js",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\js\\core\\viewer-initializer.js",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\js\\core\\viewer-initializer.js",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\js\\core\\viewer-initializer.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-07T12:08:56.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "icon-512.png -  [\uD55C\uAD6D\uC5B4(\uB300\uD55C\uBBFC\uAD6D)] - PNG [512x512, 4\uBE44\uD2B8, PNG]",
+              "DocumentMoniker": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\icon-512.png",
+              "RelativeDocumentMoniker": "Aitect_pilot\\wwwroot\\icon-512.png",
+              "ToolTip": "C:\\Users\\archi\\source\\repos\\Aitect_New\\Aitect_pilot\\wwwroot\\icon-512.png -  [\uD55C\uAD6D\uC5B4(\uB300\uD55C\uBBFC\uAD6D)] - PNG [512x512, 4\uBE44\uD2B8, PNG]",
+              "RelativeToolTip": "Aitect_pilot\\wwwroot\\icon-512.png -  [\uD55C\uAD6D\uC5B4(\uB300\uD55C\uBBFC\uAD6D)] - PNG [512x512, 4\uBE44\uD2B8, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-06-07T06:16:28.306Z",
+              "EditorCaption": " -  [\uD55C\uAD6D\uC5B4(\uB300\uD55C\uBBFC\uAD6D)] - PNG [512x512, 4\uBE44\uD2B8, PNG]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

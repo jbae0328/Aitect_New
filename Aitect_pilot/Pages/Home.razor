@@ -1,31 +1,27 @@
 ﻿@page "/"
 @inject NavigationManager Navigation
-
 <PageTitle>Aitect - CAD Software</PageTitle>
-
 <!-- 헤더 -->
 <div class="header">
     <div class="logo">Aitect</div>
 </div>
-
 <!-- 메인 콘텐츠 -->
 <div class="main-content">
     <h1 class="hero-title">스마트 자동화 설계 플랫폼<br>Made Simple</h1>
     <p class="hero-subtitle">
-        복잡한 설계 프로세스를 파라미터 입력만으로 자동화합니다. 
-        검증된 알고리즘과 파라메트릭 시스템을 통해 설계 효율성을 극대화하세요.
+        복잡한 설계 프로세스를 파라미터 입력으로 자동화합니다.
+        검증된 알고리즘과 
+        파라메트릭 시스템을 통해 설계 효율성을 극대화하세요.
     </p>
     <button class="cta-button" @onclick="StartDrawing">Start Drawing</button>
 </div>
-
 @code {
     private void StartDrawing()
     {
-        // 3D 모델링 페이지로 이동
-        Navigation.NavigateTo("3d");
+        // Workspace 페이지로 이동
+        Navigation.NavigateTo("workspace");
     }
 }
-
 <style>
     * {
         margin: 0;
@@ -39,7 +35,6 @@
         min-height: 100vh;
         overflow-x: hidden;
     }
-
     /* 헤더 */
     .header {
         display: flex;
@@ -56,7 +51,6 @@
         color: white;
         letter-spacing: -1px;
     }
-
     /* 메인 콘텐츠 */
     .main-content {
         text-align: center;
@@ -103,7 +97,7 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
-          
+
     /* 반응형 */
     @@media (max-width: 768px) {
         .header {
@@ -119,7 +113,6 @@
             padding: 0 20px;
         }
     }
-
     /* 애니메이션 */
     @@keyframes fadeInUp {
         from {

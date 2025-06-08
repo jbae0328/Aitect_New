@@ -1,27 +1,144 @@
-<!-- wwwroot/index.html 파일 수정 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Aitect</title>
+    <title>Aitect_pilot</title>
     <base href="/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
+    <link href="css/workspace-styles.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="Aitect_pilot.styles.css" rel="stylesheet" />
 </head>
-
 <body>
     <div id="app">Loading...</div>
-
     <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
 
+    <!-- Three.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
+    <!-- 핵심 JS 파일들만 로드 (존재하는 파일들만) -->
+    <!-- 1. 기본 매니저들 -->
+    <script src="js/ui/status-manager.js"></script>
+
+    <!-- 2. 렌더링 엔진 -->
+    <script src="js/core/three-renderer.js"></script>
+
+    <!-- 3. 컨트롤러들 (존재하는 것만) -->
+    <script src="js/controls/camera-controller.js"></script>
+    <script src="js/controls/mouse-handler.js"></script>
+    <script src="js/controls/drag-manager.js"></script> <!-- 🆕 DragManager 추가 -->
+    <!-- 4. 도구들 (존재하는 것만) -->
+    <script src="js/tools/select-tool.js"></script>
+    <script src="js/tools/line-tool.js"></script>
+    <script src="js/tools/basic-tools.js"></script>
+    <script src="js/tools/tool-manager.js"></script>
+
+    <!-- 5. 초기화 스크립트 (인라인으로 단순화) -->
+    <script>
+        // 전역 초기화
+        window.addEventListener('DOMContentLoaded', function () {
+            console.log('=== Aitect 시작 ===');
+
+            // 기본 전역 함수들 정의
+            window.setTool = function (tool) {
+                console.log('setTool 호출:', tool);
+                if (window.ToolManager && window.ToolManager.setTool) {
+                    window.ToolManager.setTool(tool);
+                }
+            };
+
+            window.clearAll = function () {
+                console.log('clearAll 호출');
+                if (window.ThreeRenderer && window.ThreeRenderer.clearAll) {
+                    window.ThreeRenderer.clearAll();
+                }
+            };
+
+            window.toggleGrid = function () {
+                console.log('toggleGrid 호출');
+                if (window.ThreeRenderer && window.ThreeRenderer.toggleGrid) {
+                    window.ThreeRenderer.toggleGrid();
+                }
+            };
+
+            window.fitToView = function () {
+                console.log('fitToView 호출');
+                if (window.CameraController && window.CameraController.resetView) {
+                    window.CameraController.resetView();
+                } else if (window.CameraController && window.CameraController.reset) {
+                    window.CameraController.reset();
+                }
+            };
+
+            // Blazor 호환 3D 뷰어 초기화 함수
+            window.init3DViewer = function () {
+                console.log('🎯 3D 뷰어 초기화 시작');
+
+                try {
+                    // 컨테이너 확인
+                    var container = document.getElementById('sketch-viewer');
+                    if (!container) {
+                        console.error('❌ sketch-viewer 컨테이너를 찾을 수 없습니다');
+                        return;
+                    }
+
+                    // 컨테이너 준비
+                    container.id = 'threejs-container';
+                    container.innerHTML = '';
+
+                    // ThreeRenderer 초기화
+                    if (window.ThreeRenderer && window.ThreeRenderer.init) {
+                        var success = window.ThreeRenderer.init('threejs-container');
+                        if (success) {
+                            console.log('✅ ThreeRenderer 초기화 완료');
+
+                            // CameraController 초기화
+                            if (window.CameraController && window.CameraController.init) {
+                                window.CameraController.init();
+                                console.log('✅ CameraController 초기화 완료');
+                            }
+
+                            // DragManager 초기화 🆕
+                            if (window.DragManager && window.DragManager.init) {
+                                window.DragManager.init();
+                                console.log('✅ DragManager 초기화 완료');
+                            }
+
+                            // MouseHandler 초기화
+                            if (window.MouseHandler && window.MouseHandler.init) {
+                                window.MouseHandler.init();
+                                console.log('✅ MouseHandler 초기화 완료');
+                            }
+
+                            // ToolManager 초기화
+                            if (window.ToolManager && window.ToolManager.init) {
+                                window.ToolManager.init();
+                                console.log('✅ ToolManager 초기화 완료');
+                            }
+
+                            console.log('🎉 3D 뷰어 초기화 성공!');
+                        } else {
+                            console.error('❌ ThreeRenderer 초기화 실패');
+                        }
+                    } else {
+                        console.error('❌ ThreeRenderer를 찾을 수 없습니다');
+                    }
+                } catch (error) {
+                    console.error('❌ 3D 뷰어 초기화 중 에러:', error);
+                }
+            };
+
+            console.log('✅ 기본 초기화 완료');
+        });
+    </script>
+
+    <!-- Blazor 시작 (마지막) -->
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
 </html>

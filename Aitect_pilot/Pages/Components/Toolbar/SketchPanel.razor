@@ -1,0 +1,91 @@
+﻿@using Aitect_pilot.Models
+@inject IJSRuntime JSRuntime
+
+<div class="panel sketch-panel @PanelClass" id="sketch-panel">
+    <div class="panel-header">
+        <h3>Sketch Mode</h3>
+        <span class="panel-subtitle">직접 그리기 및 편집</span>
+    </div>
+
+    <div class="panel-content">
+        <div class="sketch-toolbar">
+            <div class="toolbar-section">
+                @foreach (var tool in Tools)
+                {
+                    <button class="tool-btn @(tool.IsActive ? "active" : "")"
+                            @onclick="@(() => HandleToolSelection(tool.Id))">
+                        <span class="icon">@tool.Icon</span>
+                        <span class="label">@tool.Name</span>
+                    </button>
+                }
+            </div>
+        </div>
+
+        <div class="viewer-section">
+            <div id="sketch-viewer" class="viewer-container">
+                <!-- 3D 뷰어가 여기에 로드됩니다 -->
+            </div>
+        </div>
+
+        <div class="properties-section">
+            <h4>속성</h4>
+            <div class="property-controls">
+                <div class="property-group">
+                    <label>현재 도구</label>
+                    <span id="current-tool-display">@CurrentTool</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string PanelClass { get; set; } = "full";
+    [Parameter] public string CurrentTool { get; set; } = "Select";
+    [Parameter] public EventCallback<string> OnToolSelected { get; set; }
+    [Parameter] public EventCallback OnClearAll { get; set; }
+
+    private List<Tool> Tools = new()
+    {
+        new Tool { Id = "select", Name = "Select", Icon = "📍", IsActive = true },
+        new Tool { Id = "line",   Name = "Line",   Icon = "📏", IsActive = false },
+        new Tool { Id = "clear",  Name = "Clear",  Icon = "🗑️", IsActive = false }
+    };
+
+    // JS 초기화가 한 번만 실행되도록
+    private bool _initialized;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_initialized)
+        {
+            _initialized = true;
+            // index.html 에 정의된 init3DViewer() 호출
+            await JSRuntime.InvokeVoidAsync("init3DViewer");
+        }
+    }
+
+    private async Task HandleToolSelection(string toolId)
+    {
+        // 모든 도구 비활성화
+        foreach (var tool in Tools)
+            tool.IsActive = false;
+
+        // 선택된 도구 활성화
+        var selectedTool = Tools.FirstOrDefault(t => t.Id == toolId);
+        if (selectedTool != null)
+        {
+            selectedTool.IsActive = true;
+            CurrentTool = selectedTool.Name;
+        }
+
+        if (toolId == "clear")
+        {
+            await OnClearAll.InvokeAsync();
+        }
+        else
+        {
+            await OnToolSelected.InvokeAsync(toolId);
+        }
+    }
+}

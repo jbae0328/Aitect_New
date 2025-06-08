@@ -1,0 +1,77 @@
+﻿@using Aitect_pilot.Models
+
+@if (ShowSubToolbar)
+{
+    <div class="sub-toolbar">
+        <div class="tool-group">
+            @foreach (var tool in Tools)
+            {
+                <button class="tool-btn @(tool.IsActive ? "active" : "")"
+                        @onclick="@(() => OnToolSelected.InvokeAsync(tool.Id))">
+                    <span class="tool-icon">@tool.Icon</span>
+                    <span class="tool-label">@tool.Name</span>
+                </button>
+            }
+        </div>
+    </div>
+}
+
+<style>
+    .sub-toolbar {
+        height: 50px;
+        background: #ffffff;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+        top: 125px;
+        left: 0;
+        right: 0;
+        z-index: 997;
+    }
+
+    .tool-group {
+        display: flex;
+        gap: 8px;
+    }
+
+    .tool-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6px 12px;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        min-width: 50px;
+    }
+
+        .tool-btn:hover {
+            background: #f3f4f6;
+            border-color: #d0d7de;
+        }
+
+        .tool-btn.active {
+            background: #e3f2fd;
+            border-color: #2196f3;
+        }
+
+    .tool-icon {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    .tool-label {
+        font-size: 10px;
+        color: #6b7280;
+    }
+</style>
+
+@code {
+    [Parameter] public bool ShowSubToolbar { get; set; } = false;
+    [Parameter] public List<Tool> Tools { get; set; } = new();
+    [Parameter] public EventCallback<string> OnToolSelected { get; set; }
+}

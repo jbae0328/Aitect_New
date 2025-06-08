@@ -1,16 +1,16 @@
 self.assetsManifest = {
-  "version": "Priyep14",
+  "version": "DKGjlg+B",
   "assets": [
     {
-      "hash": "sha256-bZqI+ScU3/4ZUKH+04/r0rb0BxYhQWoP5pmLixhCCvo=",
+      "hash": "sha256-5MENolzyv6SmzzLE23/mRRg0uSesKzzSkCWAn5Sd+wQ=",
       "url": "Aitect_pilot.styles.css"
     },
     {
-      "hash": "sha256-uA6SMVKexJ2uD+Xfaxyuzhq1PxQkymb5CHlMaFiX3pQ=",
+      "hash": "sha256-cb8X6u7gs3ofoRrFG83TXMf5PSuhISMu0yEmaMYqkD4=",
       "url": "_framework/Aitect_pilot.pdb"
     },
     {
-      "hash": "sha256-xrJ303kO31Pfj6ZBwvfaqiQF/etoc4kb4N+pAqpQxjg=",
+      "hash": "sha256-VVBPz7EPtPkSO/MtyTtTGApPEWCYquuDROLo0eXCwmg=",
       "url": "_framework/Aitect_pilot.wasm"
     },
     {
@@ -770,7 +770,7 @@ self.assetsManifest = {
       "url": "_framework/WindowsBase.wasm"
     },
     {
-      "hash": "sha256-i7faQ81IHdbf92zpOBAiQFJqKVpj1SNua1Uqbda8vjs=",
+      "hash": "sha256-yOJMscIaljuTZ70CinVWl7/kQEVL77CupYg/r5rdL3g=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -826,6 +826,10 @@ self.assetsManifest = {
       "url": "_framework/netstandard.wasm"
     },
     {
+      "hash": "sha256-wM0Mmz2LR4607uZlierKFNyz6bZrgCqw35fPyY9RUHI=",
+      "url": "css/Aitect Styles.css"
+    },
+    {
       "hash": "sha256-JOZWd9XYwDyrwjSB0PVTcc602GisYED21qQUCSMlGtI=",
       "url": "css/app.css"
     },
@@ -850,8 +854,56 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-l45azDDEXFrcg7cnDoUqGUV210kysxvJMqiVq0gxdoI=",
+      "hash": "sha256-9c5tn9tIxFXJ8yOo0ymLGguZShrrFCJqlT03lob/zWk=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-PS2kK4aGKr/gJayfKupN2OgzGQRmzA67RDcCbZi3Hj8=",
+      "url": "js/Tools/basic-tools.js"
+    },
+    {
+      "hash": "sha256-X8SZGuvmCnPOFSz9L1lUKWv8D9jgUG2aYgw1h82Fn88=",
+      "url": "js/Tools/drag-manager.js"
+    },
+    {
+      "hash": "sha256-cyTGPqMEcMMjCOHsC8FhKX/JsIFK89qAr+YqFHBc/TY=",
+      "url": "js/Tools/line-tool.js"
+    },
+    {
+      "hash": "sha256-7cjsmACUCyjm3aRIDvIlfQ1tpRXteMzUGBMPNoTqyvs=",
+      "url": "js/Tools/select-tool.js"
+    },
+    {
+      "hash": "sha256-p4Wgv62ykaEQNjv5RRd8dgd+FkgnPX8ZqixoIlQEzhY=",
+      "url": "js/Tools/tool-manager.js"
+    },
+    {
+      "hash": "sha256-tejodvKDz7vVOtNeBsJD7ByHAWWjxjhtpCh5eC+5s6c=",
+      "url": "js/controls/camera-controller.js"
+    },
+    {
+      "hash": "sha256-06BwzEL9fSkQaxTccmYw659wug+tQN0P9iBuXtSysqU=",
+      "url": "js/controls/keyboard-manager.js"
+    },
+    {
+      "hash": "sha256-bi883gdDMXm9eLD2CLw+2Jt6QxCUxBGH5pkrHMbph/4=",
+      "url": "js/controls/mouse-handler.js"
+    },
+    {
+      "hash": "sha256-1+E7GOY26+1QcAVnbKs1I6wmoQNae5SHew4YGvFbZIo=",
+      "url": "js/core/three-renderer.js"
+    },
+    {
+      "hash": "sha256-/GoC1QQwqpryxdNKG6GmWne3TL/LcrJvLowahsvGqDQ=",
+      "url": "js/core/viewer-initializer.js"
+    },
+    {
+      "hash": "sha256-XC/8IXGIejhh4U0yBDKpFk7YbIizjY4VBpSThWrS1aU=",
+      "url": "js/scene/grid-manager.js"
+    },
+    {
+      "hash": "sha256-TINhQp5tpSiLwwXwZmxh8RHPTr7EIQmqYIv0BTX8ZoY=",
+      "url": "js/ui/status-manager.js"
     },
     {
       "hash": "sha256-8EcDIOSrMx+IZ4kxLPLoDDgxYf4CkQ6G9xtTZK/4DGY=",
